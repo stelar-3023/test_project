@@ -1,8 +1,11 @@
+import { Container } from 'reactstrap';
+import DisplayList from '../features/display/DisplayList';
+
 const HomePage = () => {
   return (
-    <div>
-      <h1>Home Page</h1>
-    </div>
+    <Container>
+      <DisplayList />
+    </Container>
   );
 };
 

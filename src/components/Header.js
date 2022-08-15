@@ -15,7 +15,10 @@ const Header = () => {
   return (
     <Navbar dark color='primary' sticky='top' expand='md'>
       <NavbarBrand href='/'>
-        <img src={NucampLogo} alt='NuCamp Logo' />
+        <h1>
+          <img src={NucampLogo} alt='NuCamp Logo' />
+          NuCamp
+        </h1>
       </NavbarBrand>
       <NavbarToggler onClick={() => setMenuOpen(!menuOpen)} />
       <Collapse isOpen={menuOpen} navbar>

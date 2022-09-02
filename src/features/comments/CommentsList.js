@@ -1,11 +1,12 @@
 import { Col } from 'reactstrap';
 import Comment from './Comment';
 import CommentForm from './CommentForm';
+import { useSelector } from 'react-redux';
 import { selectCommentsByCampsiteId } from './commentsSlice';
 
-
 const CommentsList = ({ campsiteId }) => {
-  const comments = selectCommentsByCampsiteId(campsiteId);
+  // pass the campsiteId to the selectCommentsByCampsiteId selector
+  const comments = useSelector(selectCommentsByCampsiteId(campsiteId));
   if (comments && comments.length > 0) {
     return (
       <Col md='5' className='m-1'>

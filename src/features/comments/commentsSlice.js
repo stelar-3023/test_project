@@ -29,7 +29,7 @@ export const commentsReducer = commentsSlice.reducer;
 // export the slice's actions
 export const { addComment } = commentsSlice.actions;
 
-// export the slice's actions
+
 export const selectCommentsByCampsiteId = (campsiteId) => (state) => {
   return state.comments.commentsArray.filter(
     (comment) => comment.campsiteId === parseInt(campsiteId)

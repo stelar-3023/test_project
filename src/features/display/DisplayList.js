@@ -1,10 +1,10 @@
 import { useSelector } from 'react-redux';
 import { Col, Row } from 'reactstrap';
 // import DisplayCard from './DisplayCard';
-import AnimatedDisplayCard from './AnimatedDisplayCard';
 import { selectFeaturedCampsite } from '../campsites/campsitesSlice';
 import { selectFeaturedPromotion } from '../promotions/promotionsSlice';
 import { selectFeaturedPartner } from '../partners/partnersSlice';
+import AnimatedDisplayCard from './AnimatedDisplayCard';
 
 const DisplayList = () => {
   const items = useSelector((state) => [

@@ -9,7 +9,7 @@ import {
   Label,
 } from 'reactstrap';
 import { Formik, Field, Form, ErrorMessage } from 'formik';
-import { addComment } from './commentsSlice';
+import { postComment } from './commentsSlice';
 import { validateCommentForm } from '../../utils/validateCommentForm';
 
 const CommentForm = ({ campsiteId }) => {
@@ -27,7 +27,7 @@ const CommentForm = ({ campsiteId }) => {
       date: new Date().toISOString(),
     };
     console.log(comment);
-    dispatch(addComment(comment));
+    dispatch(postComment(comment));
     setModalOpen(false);
   };
 
